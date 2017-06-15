@@ -17,7 +17,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('public'));
 
 // database configuration with mongoose
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds125262.mlab.com:25262/scraping');
+
+"production": mongoose.connect('mongodb://admin:admin@ds125262.mlab.com:25262/scraping');
 // mongoose.connect('mongodb://localhost/onionScraper');
 var db = mongoose.connection;
 
@@ -114,7 +115,7 @@ app.post('/articles/:id', function(req, res) {
 });
 
 
-// listen on port 3000
-app.listen(process.env.PORT || 5000, function() {
-	console.log('App running on port 3000');
+// listen on port 27017
+app.listen(process.env.PORT || 27017, function() {
+	console.log('App running on port 27017');
 });
