@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient( rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(http://www.wired.com/wp-content/uploads/2016/06/OnionLogo-1024x768.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+#articles {
+    width: 60%;
+    height: 700px;
+    display: inline-block;
+    overflow: auto;
+}
+
+#notes {
+    width: 30%;
+    float: right;
+}
+
+textarea,
+input {
+    display: block;
+    width: 100%;
+}
+
+input {
+    height: 36px;
+    font-size: 24px;
+}
+
+textarea {
+    height: 200px;
+    font-size: 18px;
+}
+
+.jumbotron h1 {
+	font-family: 'Raleway: 900', sans-serif;
+	font-size: 4em;
+	color:white;
+}
+
+h2 {
+	color:black;
+}
+
+.jumbotron {
+	background-color: rgba(0, 107, 58, 0.7);
+
+}
+
+#subheader {
+	color: white;
+}
