@@ -33,8 +33,8 @@ db.once('open', function() {
 });
 
 // bring in models
-var Note = require('./models/note1.js');
-var Article = require('./models/article1.js');
+var Note = require('./models/Note');
+var Article = require('./models/Article');
 
 
 // ROUTES //
