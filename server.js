@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 // database configuration with mongoose
 
-"production": mongoose.connect('mongodb://admin:admin@ds125262.mlab.com:25262/scraping');
+mongoose.connect('mongodb://admin:admin@ds125262.mlab.com:25262/scraping');
 // mongoose.connect('mongodb://localhost/onionScraper');
 var db = mongoose.connection;
 
