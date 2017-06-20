@@ -33,8 +33,8 @@ db.once('open', function() {
 });
 
 // bring in models
-var Note = require('./models/Note.js');
-var Article = require('./models/Article.js');
+var Note = require('./models/note1.js');
+var Article = require('./models/article1.js');
 
 
 // ROUTES //
@@ -113,7 +113,6 @@ app.post('/articles/:id', function(req, res) {
 		}
 	});
 });
-
 
 // listen on port 27017
 app.listen(process.env.PORT || 27017, function() {
